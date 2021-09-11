@@ -3,11 +3,14 @@ auth:
     username: USERNAME
     password: PASSWORD
 images:
-  k8s.gcr.io/sig-storage/csi-attacher: willdockerhub/csi-attacher
-  k8s.gcr.io/sig-storage/csi-provisioner: willdockerhub/csi-provisioner
-  k8s.gcr.io/sig-storage/csi-node-driver-registrar: willdockerhub/csi-node-driver-registrar
-  k8s.gcr.io/sig-storage/csi-resizer: willdockerhub/csi-resizer
-  k8s.gcr.io/sig-storage/csi-snapshotter: willdockerhub/csi-snapshotter
+  # kubernetes image
+  k8s.gcr.io/kube-apiserver: sundewang/kube-apiserver
+  k8s.gcr.io/kube-scheduler: sundewang/kube-scheduler
+  k8s.gcr.io/kube-proxy: sundewang/kube-proxy
+  k8s.gcr.io/kube-controller-manager: sundewang/kube-controller-manager
+  k8s.gcr.io/etcd: sundewang/etcd
+  coredns/coredns: sundewang/coredns
+  k8s.gcr.io/pause: sundewang/pause
   
   
   
