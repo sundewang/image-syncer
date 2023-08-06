@@ -4,16 +4,16 @@ auth:
     password: PASSWORD
 images:
   # nginx-ingres
-  k8s.gcr.io/ingress-nginx/controller: sundewang/ingress-nginx-controller
-  k8s.gcr.io/ingress-nginx/kube-webhook-certgen: sundewang/kube-webhook-certgen
+  #k8s.gcr.io/ingress-nginx/controller: sundewang/ingress-nginx-controller
+  #k8s.gcr.io/ingress-nginx/kube-webhook-certgen: sundewang/kube-webhook-certgen
   # kubernetes image
-  #k8s.gcr.io/kube-apiserver: sundewang/kube-apiserver
-  #k8s.gcr.io/kube-scheduler: sundewang/kube-scheduler
-  #k8s.gcr.io/kube-proxy: sundewang/kube-proxy
-  #k8s.gcr.io/kube-controller-manager: sundewang/kube-controller-manager
-  #k8s.gcr.io/etcd: sundewang/etcd
-  #coredns/coredns: sundewang/coredns
-  #k8s.gcr.io/pause: sundewang/pause
+  registry.k8s.io/kube-apiserver: sundewang/kube-apiserver
+  registry.k8s.io/kube-scheduler: sundewang/kube-scheduler
+  registry.k8s.io/kube-proxy: sundewang/kube-proxy
+  registry.k8s.io/kube-controller-manager: sundewang/kube-controller-manager
+  registry.k8s.io/etcd: sundewang/etcd
+  registry.k8s.io/coredns/coredns: sundewang/coredns
+  registry.k8s.io/pause: sundewang/pause
   
   
   
